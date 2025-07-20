@@ -1,4 +1,4 @@
-// Scroll-to-top button
+
 const scrollBtn = document.createElement('button');
 scrollBtn.innerText = "↑ Top";
 scrollBtn.style.position = "fixed";
@@ -29,10 +29,10 @@ const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry, index) => {
       if (entry.isIntersecting) {
-        // Add a small delay for each section
+        
         setTimeout(() => {
           entry.target.classList.add("visible");
-        }, index * 150); // 150ms delay between each section
+        }, index * 150); 
       } else {
         entry.target.classList.remove("visible");
       }
