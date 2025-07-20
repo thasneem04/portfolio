@@ -6,9 +6,11 @@ scrollBtn.style.bottom = "20px";
 scrollBtn.style.right = "20px";
 scrollBtn.style.padding = "10px 15px";
 scrollBtn.style.fontSize = "16px";
-scrollBtn.style.backgroundColor = "#4a90e2";
-scrollBtn.style.color = "white";
-scrollBtn.style.border = "none";
+scrollBtn.style.fontWeight = "bold";
+scrollBtn.style.backgroundColor = "#cd09f4ff";
+scrollBtn.style.color = "black";
+scrollBtn.style.border = "2px solid #481751ff";
+
 scrollBtn.style.borderRadius = "5px";
 scrollBtn.style.cursor = "pointer";
 scrollBtn.style.display = "none";

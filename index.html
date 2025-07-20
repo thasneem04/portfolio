@@ -23,16 +23,18 @@
       min-height: 100vh;
       background: linear-gradient(to right, #65075a, #2c052b);
       color: white;
+      
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       text-align: center;
       padding: 2rem;
+      border : 2px solid #4a90e2;
     }
     .profile-pic {
-      width: 150px;
-      height: 150px;
+      width: 200px;
+      height: 200px;
       border-radius: 50%;
       object-fit: cover;
       border: 4px solid white;
@@ -42,9 +44,12 @@
     .scroll-btn {
       margin-top: 1.5rem;
       font-size: 1.5rem;
-      color: white;
+      color: #56f1ea;
       text-decoration: none;
       animation: bounce 2s infinite;
+      font-weight:bold;
+      font-family:Georgia, 'Times New Roman', Times, serif;
+     
     }
     @keyframes bounce {
       0%, 100% { transform: translateY(0); }
@@ -76,6 +81,8 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 1rem;
+      list-style-type: none;
+      ;
     }
     #skills li {
       background-color: #680c71;
@@ -84,6 +91,7 @@
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.05);
       transition: transform 0.3s;
+       border:2px solid rgb(22, 167, 225)
     }
     #skills li:hover {
       transform: translateY(-5px);
@@ -100,6 +108,7 @@
       border-radius: 10px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.05);
       transition: transform 0.3s;
+      border: 2px solid #481751ff;
     }
     .project:hover {
       transform: translateY(-5px);
@@ -115,6 +124,7 @@
       transition: background-color 0.3s;
       text-align: center;
       max-width: fit-content;
+      border: 2px solid #4a90e2;
     }
     .resume-button:hover {
       background-color: #2a6db0;
@@ -220,9 +230,9 @@ and delete tasks</p>
   <section id="contact">
     <h2>Contact & Links</h2>
     <div class="contact-info">
-      <p>📧 thasneem.explorer5@gmail.com</p>
-      <p>📞 8939664938</p>
-      <p>📍 KumarNagar, Tiruppur district</p>
+      <p>📧<i><b>thasneem.explorer5@gmail.com</b></i></p>
+      <p>📞<i><b>8939664938</b></i></p>
+      <p>📍<i><b>KumarNagar, Tiruppur district</b></i></p>
     </div>
     <div class="links">
       <a style="color: #1b4c84" href="https://github.com/thasneem04" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 48 48">
