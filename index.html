@@ -66,6 +66,11 @@
       padding: 1.5rem;
       border-radius: 10px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+      
+    }
+    #about p:hover {
+       transform: translateY(-5px);
     }
     #skills ul {
       display: grid;
@@ -139,6 +144,17 @@
       color: white;
       font-size: 0.9rem;
     }
+    .fade-in-section {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  will-change: opacity, transform;
+}
+
+.fade-in-section.visible {
+  opacity: 1;
+  transform: scale(1);
+}
   </style>
 </head>
 <body>

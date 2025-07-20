@@ -23,3 +23,27 @@ window.addEventListener('scroll', () => {
 scrollBtn.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+const sections = document.querySelectorAll("section");
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        // Add a small delay for each section
+        setTimeout(() => {
+          entry.target.classList.add("visible");
+        }, index * 150); // 150ms delay between each section
+      } else {
+        entry.target.classList.remove("visible");
+      }
+    });
+  },
+  {
+    threshold: 0.1,
+  }
+);
+
+sections.forEach(section => {
+  section.classList.add("fade-in-section");
+  observer.observe(section);
+});
